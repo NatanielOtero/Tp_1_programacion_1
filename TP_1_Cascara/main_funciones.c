@@ -37,19 +37,19 @@ int multiplication(int operando1, int operando2)
     return 0;
 
 }
-int divide (int operando1, int operando2)
+float divide (float operando1, float operando2)
 {
-    int resultado;
+    float resultado;
 
     while(operando2 == 0)
     {
         printf("\n ERROR MATEMATICO,ingrese un divisor distinto de 0: ");
-        scanf("%d",&operando2);
+        scanf("%f",&operando2);
     }
 
     resultado = operando1 / operando2;
 
-    printf("\n El resultado de la division es:%d",resultado);
+    printf("\n El resultado de la division es:%f",resultado);
     printf("\n------------------------------------");
 
     return 0;
