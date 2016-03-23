@@ -7,7 +7,7 @@ int total(int,int);
 int substraccion(int,int);
 int multiplication(int,int);
 float divide(float,float);
-int factorial(int);
+double factorial(double);
 
 
 

@@ -7,7 +7,7 @@
 int main()
 {
     char seguir='s';
-    int opcion=0;
+    int opcion=0,band=0,band1=0;
     int operando1,operando2;
 
     while(seguir=='s')
@@ -30,26 +30,40 @@ int main()
             case 1:
                 printf("Ingresar 1er operando: ");
                 scanf("%d",&operando1);
+                band=1;
                 break;
             case 2:
                 printf("\nIngresar 2do operando: ");
                 scanf("%d",&operando2);
+                band1=1;
                 break;
             case 3:
                 system("cls");
+                if(band == 1 && band1==1)
                 total(operando1,operando2);
+                else
+                printf("ERROR");
                 break;
             case 4:
                 system("cls");
+                if(band == 1 && band1==1)
                 substraccion(operando1,operando2);
+                else
+                printf("ERROR");
                 break;
             case 5:
                 system("cls");
+                if(band == 1 && band1==1)
                 divide(operando1,operando2);
+                else
+                printf("ERROR");
                 break;
             case 6:
                 system("cls");
+                if(band == 1 && band1==1)
                 multiplication(operando1,operando2);
+                else
+                printf("ERROR");
                 break;
             case 7:
                 system("cls");
@@ -57,12 +71,17 @@ int main()
                 break;
             case 8:
                 system("cls");
-                total(operando1,operando2);
-                substraccion(operando1,operando2);
-                divide(operando1,operando2);
-                multiplication(operando1,operando2);
-                factorial(operando1);
-                factorial(operando2);
+                if(band == 1 && band1==1)
+                {
+                    total(operando1,operando2);
+                    substraccion(operando1,operando2);
+                    divide(operando1,operando2);
+                    multiplication(operando1,operando2);
+                    factorial(operando1);
+                    factorial(operando2);
+                }
+                else
+                printf("ERROR");
                 break;
             case 9:
                 seguir = 'n';

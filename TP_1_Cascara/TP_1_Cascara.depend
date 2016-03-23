@@ -13,3 +13,21 @@
 	<stdio.h>
 	"funciones.h"
 
+1458742764 source:e:\tp_1_programacion_1-master\tp_1_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<windows.h>
+	"funciones.h"
+
+1458734524 e:\tp_1_programacion_1-master\tp_1_cascara\funciones.h
+	<stdio.h>
+
+1458734801 source:e:\tp_1_programacion_1-master\tp_1_cascara\main_funciones.c
+	<stdio.h>
+	"funciones.h"
+
+1458735492 source:e:\tp_1_programacion_1-master\tp_1_cascara\funciones.c
+	<stdio.h>
+	"funciones.h"
+
