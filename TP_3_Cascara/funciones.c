@@ -72,7 +72,7 @@ int agregarPelicula(EMovie movie[],FILE *f)
 
 int borrarPelicula(EMovie movie[],FILE *f)
 {
-    int i;
+    int i=0;
     char aux[20];
 
     printf("Ingrese el titulo de la pelicula a eliminar\n");
@@ -80,16 +80,22 @@ int borrarPelicula(EMovie movie[],FILE *f)
     gets(aux);
     strlwr(aux);
 
-    for(i=0;i<M;i++)
+    rewind(f);
+    while(!feof(f))
     {
-        if(strcmp(movie[i].titulo,aux)== 0 && movie[i].estado == 1)
+        fread(&movie,sizeof(EMovie),1,f);
+        if(strcmp(aux,movie[i].titulo)==0 && movie[i].estado==1)
         {
-            movie[i].estado = 0;
+            movie[i].estado=0;
             fseek(f,(-1)*sizeof(EMovie),SEEK_CUR);
             fwrite(&movie,sizeof(EMovie),1,f);
 
+
         }
+        i++;
     }
+
+
 
     return 0;
 
