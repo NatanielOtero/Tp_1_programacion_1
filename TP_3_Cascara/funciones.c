@@ -75,7 +75,7 @@ int borrarPelicula(EMovie movie[],FILE *f)
     int i;
     char aux[20];
 
-    printf("Ingrese el titulo de la pelicula a eliminar");
+    printf("Ingrese el titulo de la pelicula a eliminar\n");
     fflush(stdin);
     gets(aux);
     strlwr(aux);
@@ -100,7 +100,7 @@ void modificar(EMovie movie[],FILE *f)
     int i=0;
     char aux[20];
 
-    printf("Ingrese el titulo de la pelicula a modificar");
+    printf("Ingrese el titulo de la pelicula a modificar\n");
     fflush(stdin);
     gets(aux);
     strlwr(aux);
@@ -112,25 +112,25 @@ void modificar(EMovie movie[],FILE *f)
         fread(&movie,sizeof(EMovie),1,f);
         if(strcmp(aux,movie[i].titulo)==0 && movie[i].estado==1)
         {
-            printf("Ingrese el nuevo titulo");
+            printf("Ingrese el nuevo titulo\n");
             fflush(stdin);
             gets(movie[i].titulo);
             val_tam(movie[i].titulo,21);
-            printf("Ingrese genero: ");
+            printf("Ingrese genero: \n");
             fflush(stdin);
             gets(movie[i].genero);
             val_tam(movie[i].genero,21);
-            printf("Ingrese duracion(min): ");
+            printf("Ingrese duracion(min): \n");
             scanf("%d",&movie[i].duracion);
             val_Enteros(movie[i].duracion);
-            printf("Ingrese descripcion: ");
+            printf("Ingrese descripcion: \n");
             fflush(stdin);
             gets(movie[i].descripcion);
             val_tam(movie[i].descripcion,51);
-            printf("Ingrese puntaje(del 1 al 10): ");
+            printf("Ingrese puntaje(del 1 al 10): \n");
             scanf("%d",&movie[i].puntaje);
             val_Rangoint(movie[i].puntaje,1,10);
-            printf("Link de imagen: ");
+            printf("Link de imagen: \n");
             fflush(stdin);
             gets(movie[i].linkImagen);
             val_tam(movie[i].linkImagen,51);
@@ -246,7 +246,7 @@ int val_Rangoint(int dato, int min, int max)
           scanf("%d",&dato);
           if(dato==isdigit(dato))
             {
-                printf("Error,ingerese numero");
+                printf("Error,ingerese numero\n");
                 scanf("%d",&dato);
             }
 
@@ -257,7 +257,7 @@ int val_Enteros(int dato)
 {
     while(dato==isdigit(dato))
             {
-                printf("Error,ingerese numero");
+                printf("Error,ingerese numero\n");
                 scanf("%d",&dato);
             }
 

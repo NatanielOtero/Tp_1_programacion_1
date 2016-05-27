@@ -48,7 +48,7 @@ int main()
                                     }
                                     else
                                     {
-                                        printf("Error,solo se permite cargar 100 peliculas");
+                                        printf("Error,solo se permite cargar 100 peliculas\n");
                                         break;
                                     }
                             case 2:
@@ -59,7 +59,7 @@ int main()
                                     }
                                     else
                                     {
-                                        printf("No se realizo la carga");
+                                        printf("No se realizo la carga\n");
                                         break;
                                     }
                             case 3:
@@ -70,7 +70,7 @@ int main()
                                     }
                                     else
                                     {
-                                        printf("No se realizo la carga");
+                                        printf("No se realizo la carga\n");
                                         break;
                                     }
                                break;
@@ -82,7 +82,7 @@ int main()
                                     }
                                     else
                                     {
-                                        printf("No se realizo la carga");
+                                        printf("No se realizo la carga\n");
                                         break;
                                     }
 
@@ -90,7 +90,7 @@ int main()
                                     seguir = 'n';
                                     break;
                             default:
-                                    printf("Opcion invalida");
+                                    printf("Opcion invalida\n");
                                     break;
                         }
                 }

@@ -76,8 +76,6 @@ int val_Rangoint(int,int,int);
  * \return entero validado
  *
  */
-
-
 int val_Enteros(int);
 
 
